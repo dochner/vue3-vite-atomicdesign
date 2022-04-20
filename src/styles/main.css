@@ -1,0 +1,78 @@
+:root {
+  --c-bg: #f5f5f5;
+  --c-text: #1D1D1D;
+  --c-scrollbar: #e5e7eb;
+  --c-scrollbar-hover: #d1d5db;
+  --header-height: 4.5rem;
+  --md-max-width: 65ch;
+}
+
+html.dark {
+  --c-bg: #1D1D1D;
+  --c-text: #fafafa;
+  --c-scrollbar: #323232;
+  --c-scrollbar-hover: #3c3c3c;
+}
+
+
+html,
+body,
+#app {
+  background: var(--c-bg);
+  color: var(--c-text);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(0,255,136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+/* scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-scrollbar) bg-transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: bg-transparent
+}
+
+*::-webkit-scrollbar-thumb {
+  transition: background 0.2s ease-in-out;
+  border: 3px solid transparent;
+  background: var(--c-scrollbar);
+  border-radius: 9999px;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--c-scrollbar-hover);
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}

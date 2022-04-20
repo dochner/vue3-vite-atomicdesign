@@ -1,0 +1,73 @@
+{
+  "name": "vue3-vite-atomicdesign",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 8081 --host",
+    "serve": "vite preview",
+    "build": "vue-tsc --noEmit && vite-ssg build",
+    "lint": "eslint --ext .js,.ts,.vue,.json .",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue,.json ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dochner/vue3-vite-atomicdesign.git"
+  },
+  "keywords": [
+    "Vue3",
+    "UnoCSS",
+    "Vite",
+    "Atomic Design"
+  ],
+  "author": "Douglas Ochner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dochner/vue3-vite-atomicdesign/issues"
+  },
+  "homepage": "https://github.com/dochner/vue3-vite-atomicdesign#readme",
+  "dependencies": {
+    "@vant/lazyload": "^1.4.0",
+    "@vueuse/core": "^8.2.6",
+    "@vueuse/head": "^0.7.6",
+    "dayjs": "^1.11.1",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.20.6",
+    "@antfu/utils": "^0.5.1",
+    "@iconify/json": "^2.1.30",
+    "@types/diacritics": "^1.3.1",
+    "@types/fs-extra": "^9.0.13",
+    "@types/sharp": "^0.30.2",
+    "@unocss/reset": "^0.31.6",
+    "@unocss/transformer-directives": "^0.31.6",
+    "@unocss/transformer-variant-group": "^0.31.6",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/compiler-sfc": "^3.2.33",
+    "@vue/server-renderer": "^3.2.33",
+    "critters": "^0.0.16",
+    "cross-env": "^7.0.3",
+    "diacritics": "^1.3.0",
+    "eslint": "^8.13.0",
+    "esno": "^0.14.1",
+    "fast-glob": "^3.2.11",
+    "feed": "^4.2.2",
+    "fs-extra": "^10.1.0",
+    "picocolors": "^1.0.0",
+    "pnpm": "^6.32.9",
+    "prismjs": "^1.28.0",
+    "shar": "^0.2.0",
+    "sharp": "^0.30.4",
+    "typescript": "^4.6.3",
+    "unocss": "^0.31.6",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-components": "^0.19.3",
+    "vite": "^2.9.5",
+    "vite-plugin-inspect": "^0.5.0",
+    "vite-plugin-pages": "^0.23.0",
+    "vite-plugin-pwa": "^0.12.0",
+    "vite-ssg": "^0.19.2",
+    "vue-tsc": "^0.34.7"
+  }
+}
